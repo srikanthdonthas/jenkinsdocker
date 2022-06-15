@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('docker') {
         agent {
-                docker { build . -t helo_there }
+                docker
             }
             steps{
                 sh '''
