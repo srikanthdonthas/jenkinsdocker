@@ -1,6 +1,13 @@
 pipeline {
     agent any
     stages {
+        stage('docker') {
+            steps{
+                sh """"
+                    docker -v
+                """
+            }
+        }
         stage('Build') {
             steps{
                 sh """"
