@@ -1,5 +1,5 @@
 pipeline {
-    agent {label: "linux"}
+    agent :docker
     stages {
         stage('Build') {
             steps{
